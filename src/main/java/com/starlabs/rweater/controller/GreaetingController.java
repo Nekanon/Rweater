@@ -2,15 +2,16 @@ package com.starlabs.rweater.controller;
 
 import com.starlabs.rweater.domain.Message;
 import com.starlabs.rweater.domain.User;
+import com.starlabs.rweater.repos.MessageRepo;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import java.util.Map;
-import com.starlabs.rweater.repos.MessageRepo;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+
+import java.util.Map;
 
 @Controller
 public class GreaetingController {
