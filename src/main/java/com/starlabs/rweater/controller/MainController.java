@@ -19,7 +19,7 @@ import java.util.Map;
 import java.util.UUID;
 
 @Controller
-public class GreaetingController {
+public class MainController {
     @Autowired
     private MessageRepo messageRepo;
 
