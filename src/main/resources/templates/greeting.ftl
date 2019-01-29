@@ -1,6 +1,6 @@
 <#import "parts/common.ftl" as c>
 
 <@c.page>
-    <b>Hello, user!</b>
-    <a href="/main">Обмен сообщениями</a>
+    <b>Привет, пользователь</b>
+    <a href="/main">Общатсья</a>
 </@c.page>
