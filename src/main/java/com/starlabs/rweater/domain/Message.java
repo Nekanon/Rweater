@@ -45,6 +45,9 @@ public class Message {
     public void setTag(String tag) {
         this.tag = tag;
     }
+    public void setFilename(String filename) {
+        this.filename = filename;
+    }
 
     public Long getId() {
         return id;
@@ -55,12 +58,7 @@ public class Message {
     public String getTag() {
         return tag;
     }
-
-
     public String getFilename() {
         return filename;
-    }
-    public void setFilename(String filename) {
-        this.filename = filename;
     }
 }
