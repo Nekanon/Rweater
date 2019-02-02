@@ -28,6 +28,11 @@
         </ul>
 
         <div class="navbar-text mr-3">${name}</div>
-        <@l.logout />
+        <#if user??>
+            <@l.logout />
+        <#else>
+            <@l.login1 />
+        </#if>
+
     </div>
 </nav>
