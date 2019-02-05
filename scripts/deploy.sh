@@ -4,16 +4,16 @@ mvn clean package
 
 echo 'Copy files...'
 
-scp -i ~/.ssh/id_rsa_starlabs \
+scp -i C:/Users/Evgen/.ssh/id_rsa \
     target/rweater-1.0-SNAPSHOT.jar \
-    nek@192.168.0.107:/home/nek/
+    nek@192.168.56.102:/home/nek/
 
 echo 'Restart server...'
 
-ssh -i ~/.ssh/id_rsa_starlabs nek@192.168.0.107 << EOF
+ssh -i C:/Users/Evgen/.ssh/id_rsa nek@192.168.56.102 << EOF
 
-pgrep java | xargs kill -9
-nohup java -jar rweater-1.0-SNAPSHOT.jar > log.txt &
+     pgrep java | xargs kill -9
+     nohup java -jar rweater-1.0-SNAPSHOT.jar > log.txt &
 
 EOF
 
