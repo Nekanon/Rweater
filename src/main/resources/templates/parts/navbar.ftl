@@ -12,14 +12,23 @@
             <li class="nav-item">
                 <a class="nav-link" href="/">Главная</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/main">Сообщения</a>
-            </li>
+
+            <#if user??>
+                <li class="nav-item">
+                    <a class="nav-link" href="/main">Сообщения</a>
+                </li>
+                <div class="nav-item">
+                    <a class="nav-link" href="/user-messages/${currentUserId}">Мои сообщения</a>
+                </div>
+            </#if>
+
+
             <#if isAdmin>
                 <li class="nav-item">
                     <a class="nav-link" href="/user">Лист пользователей</a>
                 </li>
             </#if>
+
             <#if user??>
                 <li class="nav-item">
                     <a class="nav-link" href="/user/profile">Личный кабинет</a>
