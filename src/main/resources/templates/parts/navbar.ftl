@@ -36,12 +36,8 @@
             </#if>
         </ul>
 
-        <div class="navbar-text mr-3">${name}</div>
-        <#if user??>
-            <@l.logout />
-        <#else>
-            <@l.login1 />
-        </#if>
+        <div class="navbar-text mr-3"><#if user??>${name}<#else>Залогиньтесь</#if></div>
+        <@l.logout />
 
     </div>
 </nav>
